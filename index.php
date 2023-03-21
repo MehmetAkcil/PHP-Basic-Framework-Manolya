@@ -21,3 +21,4 @@ require_once 'Config/Redirect.php';
 require_once 'Config/Respond.php';
 require_once 'Config/Database.php';
 require_once 'Config/Router.php';
+require_once 'Config/Routes.php';

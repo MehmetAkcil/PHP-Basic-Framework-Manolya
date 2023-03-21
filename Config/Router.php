@@ -76,11 +76,3 @@ class Router
         return call_user_func_array([$controller, $methodName], $matches);
     }
 }
-
-
-$router = new Router();
-
-$router->resource('/user', 'UserController', 'AuthMiddleware');
-$router->get('/', 'HomeController@index');
-
-echo $router->handle();

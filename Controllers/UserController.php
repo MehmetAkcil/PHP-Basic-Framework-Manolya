@@ -4,14 +4,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Models/UserModel.php';
 
 class UserController extends Respond
 {
-    public function index(): string|false
+    public function index()
     {
-
         $userModel = new UserModel();
         return self::response(200, [
             'data' => $userModel->find()
         ]);
-
     }
 
     public function show($id): void
