@@ -40,6 +40,8 @@ class Router
         $method = $_SERVER['REQUEST_METHOD'];
         $url = $_SERVER['REQUEST_URI'];
 
+        $url = self::urlParser($url);
+
         foreach (self::$routes[$method] as $route => $handler) {
             $routeRegex = self::generateRouteRegex($route);
             if (preg_match($routeRegex, $url, $matches)) {
@@ -49,6 +51,16 @@ class Router
         }
 
         return '404 Not Found';
+    }
+
+    private static function urlParser($url)
+    {
+        if(stristr($url, '?')){
+            //get var
+            $exp = explode('?', $url);
+            return $exp[0];
+        }
+        return $url;
     }
 
     private static function generateRouteRegex($route): string

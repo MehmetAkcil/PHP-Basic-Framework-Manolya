@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="comt">
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/FileUploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/FileUploader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Router.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679506042991</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="edit">
+      <created>1679506092631</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679506092631</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +264,8 @@
     <MESSAGE value="system optimzation" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="comt" />
-    <option name="LAST_COMMIT_MESSAGE" value="comt" />
+    <MESSAGE value="edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
