@@ -1,7 +1,6 @@
 <?php
 namespace Core\Controllers;
 
-use Core\Config\Recaptcha;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
@@ -17,6 +16,7 @@ class HomeController extends RootController
      */
     public function index(): string
     {
+
         return $this->twigView('index', ['test' => 'abc']);
     }
 
