@@ -9,7 +9,6 @@ use PHPMailer\PHPMailer\SMTP;
 class Email
 {
     private static $toEmail;
-    private static $toEmailtfhebrth;
     private static $toName;
 
     private static $subject;
