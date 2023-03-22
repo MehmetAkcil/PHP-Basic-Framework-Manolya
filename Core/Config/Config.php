@@ -27,4 +27,31 @@ class Config
             'database' => 'gorevyap'
         ]
     ];
+
+    public static function base_url($url = ''): string
+    {
+        $baseurl = Config::$base_url;
+        if($url === '/'){
+            return $baseurl;
+        }
+
+        $end = substr($baseurl, -1, 1);
+        if($end != '/'){
+            $baseurl .= '/';
+        }
+
+        $end = substr($url, 0, 1);
+
+        if($end == '/'){
+            $url = ltrim($url, '/');
+        }
+
+        return $baseurl . $url;
+    }
+
+    public static function current_url(): string
+    {
+
+        return self::base_url(Header::getServer('REQUEST_URI'));
+    }
 }

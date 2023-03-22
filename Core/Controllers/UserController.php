@@ -1,5 +1,6 @@
 <?php
 namespace Core\Controllers;
+use Core\Config\Config;
 use Core\Config\Respond;
 use Core\Models\UserModel;
 
@@ -13,14 +14,14 @@ class UserController extends Respond
         ]);
     }
 
-    public function show($id): void
+    public function show($id): string
     {
-        echo 'uye bilgisi' . $id;
+        return 'uye bilgisi' . $id;
     }
 
-    public function update($id): void
+    public function update($id): string
     {
-        echo 'uye kaydet' . $id;
+        return 'uye kaydet' . $id;
     }
 
     public function create(): string

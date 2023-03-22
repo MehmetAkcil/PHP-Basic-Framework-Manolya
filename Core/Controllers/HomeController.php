@@ -1,12 +1,28 @@
 <?php
 namespace Core\Controllers;
 
+use Core\Config\Config;
+use Core\Config\Request;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
+
 class HomeController extends RootController
 {
 
 
-    public function index()
+    /**
+     * @throws RuntimeError
+     * @throws SyntaxError
+     * @throws LoaderError
+     */
+    public function index(): string
     {
-        echo $this->twigView('index', ['test' => 'abc']);
+        return $this->twigView('index', ['test' => 'abc']);
+    }
+
+    public function test(): string
+    {
+        return 'test';
     }
 }

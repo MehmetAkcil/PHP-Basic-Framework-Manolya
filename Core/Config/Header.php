@@ -75,8 +75,14 @@ class Header
         return $this->headers['User-Agent'] ?? null;
     }
 
+    public static function getServer($key) {
+        return $_SERVER[$key] ?? null;
+    }
+
     public function get(string $header): ?string
     {
         return $this->headers[$header] ?? null;
     }
+
+
 }
