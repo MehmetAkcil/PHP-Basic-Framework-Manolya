@@ -4,7 +4,7 @@ namespace Config;
 class FileUploader
 {
     private $allowedExtensions = [
-        'image' => ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'svg', 'webp'],
+        'image' => ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'svg', 'webp', 'webpx'],
         'audio' => ['mp3', 'wav', 'wma', 'aac', 'ogg'],
         'video' => ['mp4', 'avi', 'mkv', 'wmv', 'flv', 'mov'],
         'document' => ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt'],
