@@ -1,2 +1,3 @@
 RewriteEngine On
+RewriteRule ^Temp/ - [R=403,L]
 RewriteRule ^(.*)$ index.php [L]

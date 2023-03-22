@@ -17,6 +17,7 @@ class Config
     const RECAPTCHA_SITE_KEY = '6LdJTCMlAAAAAIWR-u5IgtLRkIy07ctNezMPaDaX';
 
     const RATE_LIMITER_EXPIRATION = 20; // 20 second
+    const RATE_LIMITER_MAX_REQUESTS_PER_MINUTE = 10; // 20 second
 
 
 

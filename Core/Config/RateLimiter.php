@@ -8,10 +8,10 @@ class RateLimiter
     private mixed $maxRequestsPerMinute;
     private mixed $storage;
 
-    public function __construct($maxRequestsPerMinute = 10, $storage = null)
+    public function __construct($storage = null)
     {
         $this->ip = Header::getServer('REMOTE_ADDR');
-        $this->maxRequestsPerMinute = $maxRequestsPerMinute;
+        $this->maxRequestsPerMinute = Config::RATE_LIMITER_MAX_REQUESTS_PER_MINUTE;
         $this->storage = $storage ?: new FileStorage(Config::path_rate_limiter());
     }
 
