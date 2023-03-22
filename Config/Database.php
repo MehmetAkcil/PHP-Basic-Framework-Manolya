@@ -11,7 +11,8 @@ class Database
 
     private $conn;
 
-    public function connect(): void
+
+    public function __construct()
     {
 
         if(! isset($this->database)){
@@ -37,9 +38,6 @@ class Database
 
     public function query($sql, $params = [])
     {
-        if (!$this->conn) {
-            $this->connect();
-        }
         $stmt = $this->conn->prepare($sql);
         $stmt->execute($params);
         return $stmt;
