@@ -1,5 +1,7 @@
 <?php
 
+use Config\Session;
+
 class AuthMiddleware
 {
 

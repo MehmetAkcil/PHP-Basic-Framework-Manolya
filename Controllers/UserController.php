@@ -1,6 +1,8 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . '/Models/UserModel.php';
+
+use Config\Respond;
+use Models\UserModel;
 
 class UserController extends Respond
 {

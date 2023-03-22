@@ -1,8 +1,11 @@
 <?php
+namespace Config;
+
+use PDO;
 
 include $_SERVER['DOCUMENT_ROOT'] . '/Config/Config.php';
 
-#[AllowDynamicProperties] class Database extends Config
+class Database extends Config
 {
 
     public function __construct()

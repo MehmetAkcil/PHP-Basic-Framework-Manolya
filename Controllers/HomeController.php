@@ -1,9 +1,12 @@
 <?php
 
-class HomeController
+
+use Controllers\RootController;
+
+class HomeController extends RootController
 {
     public function index()
     {
-        return 'home';
+        return 'Mehmet';
     }
 }

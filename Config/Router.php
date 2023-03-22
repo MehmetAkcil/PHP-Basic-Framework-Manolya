@@ -1,8 +1,9 @@
 <?php
+namespace Config;
 
 class Router
 {
-    private Array $routes = [];
+    private array $routes = [];
 
     public function get($url, $handler, $middleware = false): void
     {

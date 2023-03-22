@@ -1,4 +1,5 @@
 <?php
+namespace Config;
 
 class Redirect extends Session
 {

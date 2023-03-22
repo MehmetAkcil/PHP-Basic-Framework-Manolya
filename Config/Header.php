@@ -1,4 +1,5 @@
 <?php
+namespace Config;
 
 class Header
 {
@@ -6,7 +7,12 @@ class Header
 
     public function __construct(array $headers = [])
     {
-        $this->headers = $headers;
+        $this->headers = getallheaders();
+    }
+
+    public static function set(string $header, string $value): void
+    {
+        header($header . ': ' . $value);
     }
 
     public function getAccept(): ?string

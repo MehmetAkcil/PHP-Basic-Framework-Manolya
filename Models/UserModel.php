@@ -1,4 +1,9 @@
 <?php
+
+namespace Models;
+
+use Config\Database;
+
 class UserModel extends Database
 {
     public String $tableName = 'db_user';
