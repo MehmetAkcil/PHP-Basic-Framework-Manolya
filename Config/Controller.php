@@ -3,7 +3,6 @@ namespace Config;
 
 class Controller
 {
-
     public static function base_url($url): string
     {
         $baseurl = Config::$base_url;

@@ -9,7 +9,7 @@ class Database
 
     public String $database = 'default';
 
-    private $conn;
+    private PDO $conn;
 
 
     public function __construct()
@@ -28,7 +28,7 @@ class Database
         try {
             $this->conn = new PDO($dsn, $databases[$this->database]['username'], $databases[$this->database]['password'], $options);
         } catch (PDOException $e) {
-            throw $e;
+            echo $e->getMessage();
         }
 
     }
