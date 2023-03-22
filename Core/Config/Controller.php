@@ -14,7 +14,7 @@ class Controller
      * @throws RuntimeError
      * @throws LoaderError
      */
-    protected function twigView($tpl, $data = []): string
+    protected static function view($tpl, $data = []): string
     {
 
         $loader = new \Twig\Loader\FilesystemLoader($_SERVER['DOCUMENT_ROOT'] . '/Core/Views');

@@ -17,7 +17,7 @@ class HomeController extends RootController
     public function index(): string
     {
 
-        return $this->twigView('index', ['test' => 'abc']);
+        return self::view('index');
     }
 
     public function test(): string
