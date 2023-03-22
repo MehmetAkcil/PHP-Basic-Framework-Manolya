@@ -1,11 +1,27 @@
 <?php
+
 namespace Config;
 
-class Config {
+class Config
+{
 
-    protected String $host = 'localhost';
-    protected String $username = 'root';
-    protected String $password = '';
-    protected String $database = 'gorevyap_react';
-    private String $conn;
+    public static array $databases = [
+        'default' => [
+            'host' => 'localhost',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'gorevyap_react'
+        ],
+        'gorevyap' => [
+            'host' => 'localhost',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'gorevyap'
+        ]
+    ];
+
+
+    public static bool $origin = true;
+
+    public static string $base_url = 'http://paketsatisold/';
 }

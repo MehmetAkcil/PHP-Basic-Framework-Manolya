@@ -1,8 +1,8 @@
 <?php
 //rest api origin allow
+use Config\Config;
 use Config\Session;
 
-header("Access-Control-Allow-Origin: *");
 
 // Check PHP version.
 $minPhpVersion = '8.2';
@@ -21,8 +21,10 @@ require_once 'Config/Session.php';
 
 Session::start();
 
-
 require_once 'autoload.php';
 
-require_once 'Config/Router.php';
-require_once 'Config/Routes.php';
+$origin = Config::$origin;
+
+if($origin){
+    \Config\Header::set('Access-Control-Allow-Origin', '*');
+}

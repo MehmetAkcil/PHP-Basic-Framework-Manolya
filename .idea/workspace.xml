@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="fix1">
-      <change afterPath="$PROJECT_DIR$/Config/FileUploader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/RootController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/Uploads/Admin/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="namespaces system add">
+      <change afterPath="$PROJECT_DIR$/Config/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Config/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Redirect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/Respond.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Respond.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/Routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/RootController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/RootController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middlewares/AuthMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/AuthMiddleware.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,6 +91,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\paketsatisold" />
       <recent name="C:\xampp\htdocs\paketsatisold\Public\Uploads\Admin" />
       <recent name="C:\xampp\htdocs\paketsatisold\Public\Uploads" />
       <recent name="C:\xampp\htdocs\paketsatisold\Public" />
@@ -129,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679442217506</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="namespaces system add">
+      <created>1679486426582</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679486426582</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +167,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix1" />
+    <MESSAGE value="namespaces system add" />
+    <option name="LAST_COMMIT_MESSAGE" value="namespaces system add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

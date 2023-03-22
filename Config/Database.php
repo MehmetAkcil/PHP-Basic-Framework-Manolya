@@ -2,29 +2,44 @@
 namespace Config;
 
 use PDO;
+use PDOException;
 
-include $_SERVER['DOCUMENT_ROOT'] . '/Config/Config.php';
-
-class Database extends Config
+class Database
 {
 
-    public function __construct()
+    public String $database = 'default';
+
+    private $conn;
+
+    public function connect(): void
     {
-        $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->database;
+
+        if(! isset($this->database)){
+            $this->database = 'default';
+        }
+
+        $databases = Config::$databases;
+
+        $dsn = 'mysql:host=' . $databases[$this->database]['host'] . ';dbname=' . $databases[$this->database]['database'];
+
         $options = array(
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         );
 
         try {
-            $this->conn = new PDO($dsn, $this->username, $this->password, $options);
+            $this->conn = new PDO($dsn, $databases[$this->database]['username'], $databases[$this->database]['password'], $options);
         } catch (PDOException $e) {
-            echo 'Connection failed: ' . $e->getMessage();
+            throw $e;
         }
+
     }
 
     public function query($sql, $params = [])
     {
+        if (!$this->conn) {
+            $this->connect();
+        }
         $stmt = $this->conn->prepare($sql);
         $stmt->execute($params);
         return $stmt;

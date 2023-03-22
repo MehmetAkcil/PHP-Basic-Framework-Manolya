@@ -6,11 +6,11 @@ use Models\UserModel;
 
 class UserController extends Respond
 {
-    public function index()
+    public function index(): false|string
     {
         $userModel = new UserModel();
-        return self::response(200, [
-            'data' => $userModel->find()
+        return self::respond([
+            'data' => $userModel->findAll()
         ]);
     }
 
