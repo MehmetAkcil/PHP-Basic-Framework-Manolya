@@ -4,31 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="index edit">
-      <change afterPath="$PROJECT_DIR$/Core/Views/index.twig" afterDir="false" />
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="twig add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/FileUploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/FileUploader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Redirect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Respond.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Respond.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/RootController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/RootController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/sendMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Libraries/sendMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middlewares/AuthMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Middlewares/AuthMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Models/UserModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Assets/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Public/Assets/menu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Public/Assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Uploads/Admin/file.png" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Public/Uploads/Admin/file.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/Routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Views/index.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679508813191</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="twig add">
+      <created>1679511875900</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679511875900</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +306,8 @@
     <MESSAGE value="router fix" />
     <MESSAGE value="model update" />
     <MESSAGE value="index edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="index edit" />
+    <MESSAGE value="twig add" />
+    <option name="LAST_COMMIT_MESSAGE" value="twig add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

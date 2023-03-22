@@ -9,6 +9,7 @@ spl_autoload_register(function ($class) {
         'Core\Config' => 'Core/Config/',
         'Core\Models' => 'Core/Models/',
         'Core\Libraries' => 'Core/Libraries/',
+        'Core\Middlewares' => 'Core/Middlewares/',
     );
 
     // Sınıfı arayın ve yükleyin

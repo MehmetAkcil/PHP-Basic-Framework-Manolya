@@ -1,8 +1,36 @@
 <?php
 namespace Core\Config;
 
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
+use Twig\Extension\CoreExtension;
+use Twig\TwigFunction;
+
 class Controller
 {
+    /**
+     * @throws SyntaxError
+     * @throws RuntimeError
+     * @throws LoaderError
+     */
+    protected function twigView($tpl, $data = []): string
+    {
+
+        $loader = new \Twig\Loader\FilesystemLoader($_SERVER['DOCUMENT_ROOT'] . '/Core/Views');
+        $twig = new \Twig\Environment($loader);
+
+        $twig->getExtension(CoreExtension::class)->setTimezone('Europe/Istanbul');
+
+        $twig->addFunction(new TwigFunction('print', function ($asset) {
+            return print_r($asset, true);
+        }));
+
+        $tpl = !stripos($tpl, '.twig') ? $tpl . '.twig' : $tpl;
+
+        return $twig->render($tpl, $data);
+    }
+
     public static function base_url($url): string
     {
         $baseurl = Config::$base_url;
@@ -19,7 +47,7 @@ class Controller
         }
         $filename = $_SERVER['DOCUMENT_ROOT'] . '/Public/Assets/' . $assets;
         if(! file_exists($filename)){
-            return 'Dosya bulunamadi.';
+            return 'File Not Found.';
         }
         return self::typer($filename);
     }
@@ -31,7 +59,7 @@ class Controller
         }
         $filename = $_SERVER['DOCUMENT_ROOT'] . '/Public/Uploads/' . $document;
         if(! file_exists($filename)){
-            return 'Dosya bulunamadi.';
+            return 'File Not Found.';
         }
         return self::typer($filename);
     }

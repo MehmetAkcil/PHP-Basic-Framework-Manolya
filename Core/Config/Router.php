@@ -76,8 +76,8 @@ class Router
         $middlewarePath = $_SERVER['DOCUMENT_ROOT'] . '/Core/Middlewares/' . $handler[1] . '.php';
 
         if(file_exists($middlewarePath)){
-            include $middlewarePath;
-            $controller = new $handler[1];
+            $midllewareController = '\\Core\Middlewares\\' . $handler[1];
+            $controller = new $midllewareController;
             echo call_user_func_array([$controller, 'index'], []);
         }
 
