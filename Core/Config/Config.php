@@ -16,12 +16,15 @@ class Config
     const RECAPTCHA_SECRET_KEY = '6LdJTCMlAAAAAKhYb8bs7LmOoJqToHPzIdh5BBoa';
     const RECAPTCHA_SITE_KEY = '6LdJTCMlAAAAAIWR-u5IgtLRkIy07ctNezMPaDaX';
 
+    const RATE_LIMITER_STATUS = FALSE;
     const RATE_LIMITER_EXPIRATION = 20; // 20 second
     const RATE_LIMITER_MAX_REQUESTS_PER_MINUTE = 10; // 20 second
 
+    const IP_RESTRICTOR_STATUS = FALSE;
+    const IP_RESTRICTOR_ALLOWED = ['127.0.0.1', '192.168.1.1'];
 
 
-    public static bool $origin = true;
+    public static bool $origin = TRUE;
     public static array $databases = [
         'default' => [
             'host' => 'localhost',

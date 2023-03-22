@@ -1,5 +1,6 @@
 <?php
 use Core\Config\Config;
+use Core\Config\IpRestrictor;
 use Core\Config\RateLimiter;
 
 spl_autoload_register(function ($class) {
@@ -31,8 +32,16 @@ if(Config::$origin){
     \Core\Config\Header::set('Access-Control-Allow-Origin', '*');
 }
 
-$ipLimit = new RateLimiter();
+if(Config::RATE_LIMITER_STATUS){
+    $ipLimit = new RateLimiter();
+    $ipLimit->checkRequestCount();
+}
 
-$ipLimit->checkRequestCount();
+
+if(Config::IP_RESTRICTOR_STATUS){
+    $restrictor = new IpRestrictor(Config::IP_RESTRICTOR_ALLOWED);
+    $restrictor->restrict();
+}
+
 
 require_once __DIR__ . '/Routes.php';
