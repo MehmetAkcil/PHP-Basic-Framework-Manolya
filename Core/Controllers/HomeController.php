@@ -1,6 +1,7 @@
 <?php
 namespace Core\Controllers;
 
+use Core\Config\Recaptcha;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;

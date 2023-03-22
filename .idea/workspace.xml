@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="php rotuer system group method add">
-      <change afterPath="$PROJECT_DIR$/Core/Config/CsrfToken.php" afterDir="false" />
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="csrf token system add">
+      <change afterPath="$PROJECT_DIR$/Core/Config/Recaptcha.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/UserController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,11 +90,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\paketsatisold\Core\Config" />
       <recent name="C:\xampp\htdocs\paketsatisold" />
       <recent name="C:\xampp\htdocs\paketsatisold\Public\Uploads\Admin" />
       <recent name="C:\xampp\htdocs\paketsatisold\Public\Uploads" />
       <recent name="C:\xampp\htdocs\paketsatisold\Public" />
-      <recent name="C:\xampp\htdocs\paketsatisold\Router" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -273,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679521224841</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="csrf token system add">
+      <created>1679522397071</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1679522397071</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +335,8 @@
     <MESSAGE value="middleware in router update" />
     <MESSAGE value="request curl add" />
     <MESSAGE value="php rotuer system group method add" />
-    <option name="LAST_COMMIT_MESSAGE" value="php rotuer system group method add" />
+    <MESSAGE value="csrf token system add" />
+    <option name="LAST_COMMIT_MESSAGE" value="csrf token system add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

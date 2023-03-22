@@ -14,6 +14,8 @@ class Config
 
     const csrfTokenName = 'csrftoken';
     const csrfTokenNameSession = 'csrftoken';
+    const RECAPTCHA_SECRET_KEY = '6LdJTCMlAAAAAKhYb8bs7LmOoJqToHPzIdh5BBoa';
+    const RECAPTCHA_SITE_KEY = '6LdJTCMlAAAAAIWR-u5IgtLRkIy07ctNezMPaDaX';
 
     public static bool $origin = true;
     public static array $databases = [
