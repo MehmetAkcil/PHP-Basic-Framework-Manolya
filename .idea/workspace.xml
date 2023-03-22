@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="autoload fix1">
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="error manager fix 1">
+      <change afterPath="$PROJECT_DIR$/Config/Email.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middlewares/AuthMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/AuthMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679491186981</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="error manager fix 1">
+      <created>1679491868430</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679491868430</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +223,8 @@
     <MESSAGE value="Libraries system add" />
     <MESSAGE value="Public assets add" />
     <MESSAGE value="autoload fix1" />
-    <option name="LAST_COMMIT_MESSAGE" value="autoload fix1" />
+    <MESSAGE value="error manager fix 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="error manager fix 1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
