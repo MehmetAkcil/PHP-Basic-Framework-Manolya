@@ -1,6 +1,6 @@
 <?php
 
-namespace Libraries;
+namespace Core\Libraries;
 
 class sendMail
 {

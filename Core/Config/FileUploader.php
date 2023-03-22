@@ -1,5 +1,7 @@
 <?php
-namespace Config;
+namespace Core\Config;
+
+use Config\Exception;
 
 class FileUploader
 {

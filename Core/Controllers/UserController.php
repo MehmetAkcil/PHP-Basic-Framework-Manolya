@@ -1,7 +1,7 @@
 <?php
-namespace Controllers;
-use Config\Respond;
-use Models\UserModel;
+namespace Core\Controllers;
+use Core\Config\Respond;
+use Core\Models\UserModel;
 
 class UserController extends Respond
 {

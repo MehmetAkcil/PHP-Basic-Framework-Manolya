@@ -1,9 +1,9 @@
 <?php
-namespace Config;
+namespace Core\Config;
 
 class Router
 {
-    //const routes = [];
+
     private static array $routes = [];
 
     public static function get($url, $handler, $middleware = false): void
@@ -73,7 +73,7 @@ class Router
     private static function callHandler($handler, $matches)
     {
         //middleware kontrolu yap
-        $middlewarePath = $_SERVER['DOCUMENT_ROOT'] . '/Middlewares/' . $handler[1] . '.php';
+        $middlewarePath = $_SERVER['DOCUMENT_ROOT'] . '/Core/Middlewares/' . $handler[1] . '.php';
 
         if(file_exists($middlewarePath)){
             include $middlewarePath;
@@ -82,7 +82,7 @@ class Router
         }
 
         $handlerParts = explode('@', $handler[0]);
-        $controllerName = '\\Controllers\\' . $handlerParts[0];
+        $controllerName = '\\Core\Controllers\\' . $handlerParts[0];
         $methodName = $handlerParts[1];
         $controller = new $controllerName;
         return call_user_func_array([$controller, $methodName], $matches);

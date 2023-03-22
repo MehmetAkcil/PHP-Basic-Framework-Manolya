@@ -1,5 +1,5 @@
 <?php
-namespace Config;
+namespace Core\Config;
 
 class Header
 {

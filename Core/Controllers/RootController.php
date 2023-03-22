@@ -1,7 +1,7 @@
 <?php
-namespace Controllers;
+namespace Core\Controllers;
 
-use Config\Controller;
+use Core\Config\Controller;
 
 class RootController extends Controller
 {

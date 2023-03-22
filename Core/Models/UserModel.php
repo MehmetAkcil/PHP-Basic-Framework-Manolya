@@ -1,8 +1,8 @@
 <?php
 
-namespace Models;
+namespace Core\Models;
 
-use Config\Model;
+use Core\Config\Model;
 
 class UserModel extends Model
 {

@@ -1,10 +1,9 @@
 <?php
 
-namespace Config;
+namespace Core\Config;
 
-use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\PHPMailer;
 
 class Email
 {

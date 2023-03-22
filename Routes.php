@@ -1,5 +1,6 @@
 <?php
-use Config\Router;
+
+use Core\Config\Router;
 
 Router::get('/', 'HomeController@index');
 
