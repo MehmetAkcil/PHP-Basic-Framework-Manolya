@@ -15,9 +15,6 @@ class Database
     public function __construct()
     {
 
-        if(! isset($this->database)){
-            $this->database = 'default';
-        }
 
         $databases = Config::$databases;
 
