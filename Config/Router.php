@@ -3,61 +3,62 @@ namespace Config;
 
 class Router
 {
-    private array $routes = [];
+    //const routes = [];
+    private static array $routes = [];
 
-    public function get($url, $handler, $middleware = false): void
+    public static function get($url, $handler, $middleware = false): void
     {
-        $this->routes['GET'][$url] = [$handler, $middleware];
+        self::$routes['GET'][$url] = [$handler, $middleware];
     }
 
-    public function post($url, $handler, $middleware = false): void
+    public static function post($url, $handler, $middleware = false): void
     {
-        $this->routes['POST'][$url] = [$handler, $middleware];
+        self::$routes['POST'][$url] = [$handler, $middleware];
     }
 
-    public function put($url, $handler, $middleware = false): void
+    public static function put($url, $handler, $middleware = false): void
     {
-        $this->routes['PUT'][$url] = [$handler, $middleware];
+        self::$routes['PUT'][$url] = [$handler, $middleware];
     }
-    public function delete($url, $handler, $middleware = false): void
+    public static function delete($url, $handler, $middleware = false): void
     {
-        $this->routes['DELETE'][$url] = [$handler, $middleware];
-    }
-
-    public function resource($url, $handler, $middleware = false): void
-    {
-        $this->get($url, $handler . '@index', $middleware);
-        $this->post($url, $handler . '@create', $middleware);
-        $this->get($url . '/{id}', $handler . '@show', $middleware);
-        $this->put($url . '/{id}', $handler . '@update', $middleware);
-        $this->delete($url . '/{id}', $handler . '@delete', $middleware);
-
+        self::$routes['DELETE'][$url] = [$handler, $middleware];
     }
 
-    public function handle()
+    public static function resource($url, $handler, $middleware = false): void
+    {
+        self::get($url, $handler . '@index', $middleware);
+        self::post($url, $handler . '@create', $middleware);
+        self::get($url . '/{id}', $handler . '@show', $middleware);
+        self::put($url . '/{id}', $handler . '@update', $middleware);
+        self::delete($url . '/{id}', $handler . '@delete', $middleware);
+
+    }
+
+    public static function handle()
     {
         $method = $_SERVER['REQUEST_METHOD'];
         $url = $_SERVER['REQUEST_URI'];
 
-        foreach ($this->routes[$method] as $route => $handler) {
-            $routeRegex = $this->generateRouteRegex($route);
+        foreach (self::$routes[$method] as $route => $handler) {
+            $routeRegex = self::generateRouteRegex($route);
             if (preg_match($routeRegex, $url, $matches)) {
                 array_shift($matches);
-                return $this->callHandler($handler, $matches);
+                return self::callHandler($handler, $matches);
             }
         }
 
         return '404 Not Found';
     }
 
-    private function generateRouteRegex($route): string
+    private static function generateRouteRegex($route): string
     {
         $routeRegex = str_replace('/', '\/', $route);
         $routeRegex = preg_replace('/\{.*?\}/', '([^\/]+)', $routeRegex);
         return '/^' . $routeRegex . '$/';
     }
 
-    private function callHandler($handler, $matches)
+    private static function callHandler($handler, $matches)
     {
         //middleware kontrolu yap
         $middlewarePath = $_SERVER['DOCUMENT_ROOT'] . '/Middlewares/' . $handler[1] . '.php';

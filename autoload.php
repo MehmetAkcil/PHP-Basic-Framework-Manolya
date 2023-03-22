@@ -5,6 +5,7 @@ spl_autoload_register(function ($class) {
         'Controllers' => __DIR__ . '/Controllers/',
         'Config' => __DIR__ . '/Config/',
         'Models' => __DIR__ . '/Models/',
+        'Libraries' => __DIR__ . '/Libraries/',
     );
 
     // Sınıfı arayın ve yükleyin

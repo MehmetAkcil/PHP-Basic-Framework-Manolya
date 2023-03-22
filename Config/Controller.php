@@ -4,6 +4,15 @@ namespace Config;
 class Controller
 {
 
+    public static function base_url($url): string
+    {
+        $baseurl = Config::$base_url;
+        if(stristr($baseurl, '/')){
+            return $baseurl . $url;
+        }
+        return $baseurl . '/' . $url;
+    }
+
     public function assets($assets): false|int|string
     {
         if(stristr($assets, '&')){
