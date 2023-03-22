@@ -52,7 +52,7 @@ class Database
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function insert($table, $data): false|string
+    public function insertTable($table, $data): false|string
     {
         $columns = implode(',', array_keys($data));
         $placeholders = implode(',', array_fill(0, count($data), '?'));
@@ -64,7 +64,7 @@ class Database
         return $this->conn->lastInsertId();
     }
 
-    public function update($table, $data, $where): false|string
+    public function updateTable($table, $data, $where): false|string
     {
         $columns = array_keys($data);
         $set = implode('=?,', $columns) . '=?';
@@ -77,7 +77,7 @@ class Database
         return $this->conn->lastInsertId();
     }
 
-    public function delete($table, $where)
+    public function deleteTable($table, $where)
     {
         $sql = "DELETE FROM $table WHERE $where";
         $this->query($sql, $where);

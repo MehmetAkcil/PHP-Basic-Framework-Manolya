@@ -7,14 +7,34 @@ class Model extends Database
 
     public function findAll()
     {
-        $data = $this->getRow("SELECT * FROM {$this->tableName}");
-        return $data;
+        return $this->getRow("SELECT * FROM {$this->tableName}");
     }
-    public function find($ID)
+
+    public function find(Int $ID)
     {
-        $data = $this->getRow("SELECT * FROM {$this->tableName} WHERE {$this->primaryId} = ?", [
+        return $this->getRow("SELECT * FROM {$this->tableName} WHERE {$this->primaryId} = ?", [
             $ID
         ]);
-        return $data;
     }
+
+    public function findWhere($where)
+    {
+        return $this->getRow("SELECT * FROM {$this->tableName} WHERE {$where}");
+    }
+
+    public function insert(Array $data): false|string
+    {
+        return $this->insertTable($this->tableName, $data);
+    }
+
+    public function update(Array $data, Int $id): false|string
+    {
+        return $this->updateTable($this->tableName, $data, $this->primaryId . ' = ' . $id);
+    }
+
+    public function updateWhere(Array $data, Int $where): false|string
+    {
+        return $this->updateTable($this->tableName, $data, $where);
+    }
+
 }
