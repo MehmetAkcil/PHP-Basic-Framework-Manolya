@@ -1,8 +1,6 @@
 <?php
-//rest api origin allow
-use Config\Config;
-use Config\Session;
-
+ob_start();
+session_start();
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
@@ -10,24 +8,9 @@ error_reporting(E_ALL);
 // Check PHP version.
 $minPhpVersion = '8.2';
 if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
-    $message = sprintf(
-        'Php surumunuz %s ve uzeri olmasi gerekmektedir. Mevcut Surum: %s',
-        $minPhpVersion,
-        PHP_VERSION
-    );
-
-    exit($message);
+    exit('Your PHP version needs to be '.$minPhpVersion.' or higher. Current version is '.PHP_VERSION);
 }
-
-//routers require
-require_once 'Config/Session.php';
-
-Session::start();
 
 require_once 'autoload.php';
 
-$origin = Config::$origin;
-
-if($origin){
-    \Config\Header::set('Access-Control-Allow-Origin', '*');
-}
+ob_end_flush();

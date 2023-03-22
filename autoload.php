@@ -1,4 +1,6 @@
 <?php
+use Config\Config;
+
 spl_autoload_register(function ($class) {
     // namespace'leri ve dosya yollarını belirleyin
     $namespaces = array(
@@ -21,4 +23,9 @@ spl_autoload_register(function ($class) {
     }
 });
 require 'vendor/autoload.php';
+
+if(Config::$origin){
+    \Config\Header::set('Access-Control-Allow-Origin', '*');
+}
+
 require_once __DIR__ . '/Routes.php';
