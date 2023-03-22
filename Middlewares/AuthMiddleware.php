@@ -1,5 +1,6 @@
 <?php
 
+use Config\Respond;
 use Config\Session;
 
 class AuthMiddleware
