@@ -70,10 +70,8 @@ class Router
         }
 
         $handlerParts = explode('@', $handler[0]);
-        $controllerName = $handlerParts[0];
+        $controllerName = '\\Controllers\\' . $handlerParts[0];
         $methodName = $handlerParts[1];
-        $controllerFolderPath = $_SERVER['DOCUMENT_ROOT'] . '/Controllers/';
-        include $controllerFolderPath . $controllerName . '.php';
         $controller = new $controllerName;
         return call_user_func_array([$controller, $methodName], $matches);
     }

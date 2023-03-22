@@ -1,6 +1,5 @@
 <?php
-
-
+namespace Controllers;
 use Config\Respond;
 use Models\UserModel;
 
