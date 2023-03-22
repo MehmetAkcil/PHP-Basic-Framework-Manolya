@@ -4,9 +4,9 @@ namespace Core\Config;
 
 class RateLimiter
 {
-    private $ip;
-    private $maxRequestsPerMinute;
-    private $storage;
+    private mixed $ip;
+    private mixed $maxRequestsPerMinute;
+    private mixed $storage;
 
     public function __construct($maxRequestsPerMinute = 10, $storage = null)
     {
@@ -20,7 +20,7 @@ class RateLimiter
         return 'ip_restriction_' . $this->ip;
     }
 
-    public function checkRequestCount()
+    public function checkRequestCount(): void
     {
         $key = $this->getKey();
 
@@ -49,72 +49,6 @@ class RateLimiter
     }
 }
 
-interface StorageInterface
-{
-    public function get($key);
-
-    public function set($key, $value, $expiration = null);
-
-    public function remove($key);
-
-    public function expire($key, $expiration);
-}
-
-class FileStorage implements StorageInterface
-{
-    private $directory;
-
-    public function __construct($directory)
-    {
-        $this->directory = $directory;
-    }
-
-    public function get($key)
-    {
-        $file = $this->getFile($key);
-        if (!file_exists($file)) {
-            return null;
-        }
-        $data = unserialize(file_get_contents($file));
-        if (time() >= $data['expiration']) {
-            $this->remove($key);
-            return null;
-        }
-        return $data['value'];
-    }
-
-    public function set($key, $value, $expiration = null)
-    {
-        $data = [
-            'value' => $value,
-            'expiration' => time() + ($expiration ?: 0),
-        ];
-        file_put_contents($this->getFile($key), serialize($data));
-    }
-
-    public function remove($key)
-    {
-        $file = $this->getFile($key);
-        if (file_exists($file)) {
-            unlink($file);
-        }
-    }
-
-    public function expire($key, $expiration)
-    {
-        $file = $this->getFile($key);
-        if (file_exists($file)) {
-            $data = unserialize(file_get_contents($file));
-            $data['expiration'] = time() + ($expiration ?: 0);
-            file_put_contents($file, serialize($data));
-        }
-    }
-
-    private function getFile($key): string
-    {
-        return $this->directory . '/' . md5($key) . '.dat';
-    }
-}
 
 
 
