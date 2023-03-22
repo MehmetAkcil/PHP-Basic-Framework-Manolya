@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="middleware in router update">
-      <change afterPath="$PROJECT_DIR$/Core/Config/Request.php" afterDir="false" />
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="request curl add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Views/index.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/Routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -262,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679512324550</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="request curl add">
+      <created>1679520516541</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679520516541</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +319,8 @@
     <MESSAGE value="index edit" />
     <MESSAGE value="twig add" />
     <MESSAGE value="middleware in router update" />
-    <option name="LAST_COMMIT_MESSAGE" value="middleware in router update" />
+    <MESSAGE value="request curl add" />
+    <option name="LAST_COMMIT_MESSAGE" value="request curl add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

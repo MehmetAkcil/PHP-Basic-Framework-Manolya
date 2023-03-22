@@ -25,4 +25,16 @@ class HomeController extends RootController
     {
         return 'test';
     }
+    public function test2(): string
+    {
+        return 'test2';
+    }
+    public function test3(): string
+    {
+        return 'test3';
+    }
+    public function test4(): string
+    {
+        return 'test4';
+    }
 }

@@ -10,4 +10,10 @@ Router::get('/assets/{assets}', 'HomeController@assets'); //istediginiz bir cont
 Router::resource('/user', 'UserController', 'AuthMiddleware');
 
 
+Router::group('/tesxt', static function () {
+    Router::get('', 'HomeController@test');
+    Router::get('/{id}', 'HomeController@test2');
+});
+
+
 echo Router::handle();

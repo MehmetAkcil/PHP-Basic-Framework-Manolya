@@ -4,24 +4,30 @@ namespace Core\Config;
 class Router
 {
 
+    private static String $routerUrl = '';
+
     private static array $routes = [];
 
     public static function get($url, $handler, $middleware = false): void
     {
+        $url = self::$routerUrl . $url ?? '';
         self::$routes['GET'][$url] = [$handler, $middleware];
     }
 
     public static function post($url, $handler, $middleware = false): void
     {
+        $url = self::$routerUrl . $url ?? '';
         self::$routes['POST'][$url] = [$handler, $middleware];
     }
 
     public static function put($url, $handler, $middleware = false): void
     {
+        $url = self::$routerUrl . $url ?? '';
         self::$routes['PUT'][$url] = [$handler, $middleware];
     }
     public static function delete($url, $handler, $middleware = false): void
     {
+        $url = self::$routerUrl . $url ?? '';
         self::$routes['DELETE'][$url] = [$handler, $middleware];
     }
 
@@ -33,6 +39,11 @@ class Router
         self::put($url . '/{id}', $handler . '@update', $middleware);
         self::delete($url . '/{id}', $handler . '@delete', $middleware);
 
+    }
+
+    public static function group($url, $callback) {
+        self::$routerUrl = $url;
+        call_user_func($callback);
     }
 
     public static function handle()
