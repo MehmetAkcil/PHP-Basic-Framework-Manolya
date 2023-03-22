@@ -1,6 +1,6 @@
 <?php
-//
-//use Core\Config\Config;
+use Core\Config\Config;
+use Core\Config\RateLimiter;
 
 spl_autoload_register(function ($class) {
     // namespace'leri ve dosya yollarını belirleyin
@@ -27,8 +27,12 @@ spl_autoload_register(function ($class) {
 
 require 'vendor/autoload.php';
 
-//if(Config::$origin){
-//    \Core\Config\Header::set('Access-Control-Allow-Origin', '*');
-//}
+if(Config::$origin){
+    \Core\Config\Header::set('Access-Control-Allow-Origin', '*');
+}
+
+$ipLimit = new RateLimiter();
+
+$ipLimit->checkRequestCount();
 
 require_once __DIR__ . '/Routes.php';

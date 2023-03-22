@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="csrf token system add">
-      <change afterPath="$PROJECT_DIR$/Core/Config/Recaptcha.php" afterDir="false" />
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="google RECAPTCHA system add">
+      <change afterPath="$PROJECT_DIR$/Public/Assets/menu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Public/Assets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Public/Assets/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/IpRestrictor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Public/Assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/RateLimiter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Public/Uploads/Admin/file.png" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/Uploads/Admin/file.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +95,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\paketsatisold\Core\Config" />
       <recent name="C:\xampp\htdocs\paketsatisold" />
+      <recent name="C:\xampp\htdocs\paketsatisold\Core\Public" />
+      <recent name="C:\xampp\htdocs\paketsatisold\Temp" />
+      <recent name="C:\xampp\htdocs\paketsatisold\Core\Config" />
       <recent name="C:\xampp\htdocs\paketsatisold\Public\Uploads\Admin" />
-      <recent name="C:\xampp\htdocs\paketsatisold\Public\Uploads" />
-      <recent name="C:\xampp\htdocs\paketsatisold\Public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -278,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679522397071</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="google RECAPTCHA system add">
+      <created>1679524048568</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1679524048568</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +348,8 @@
     <MESSAGE value="request curl add" />
     <MESSAGE value="php rotuer system group method add" />
     <MESSAGE value="csrf token system add" />
-    <option name="LAST_COMMIT_MESSAGE" value="csrf token system add" />
+    <MESSAGE value="google RECAPTCHA system add" />
+    <option name="LAST_COMMIT_MESSAGE" value="google RECAPTCHA system add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

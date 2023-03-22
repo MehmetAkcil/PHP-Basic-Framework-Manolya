@@ -1,7 +1,9 @@
 <?php
 ob_start();
+session_save_path('Temp/Sessions');
 session_start();
 ini_set("error_reporting", E_ALL & ~E_DEPRECATED);
+
 
 
 // Check PHP version.

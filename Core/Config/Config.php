@@ -11,11 +11,14 @@ class Config
     const SMTP_PASSWORD = '';
     const SMTP_PORT = 465;
     const SMTP_MAILER = 'Mailer';
-
     const csrfTokenName = 'csrftoken';
     const csrfTokenNameSession = 'csrftoken';
     const RECAPTCHA_SECRET_KEY = '6LdJTCMlAAAAAKhYb8bs7LmOoJqToHPzIdh5BBoa';
     const RECAPTCHA_SITE_KEY = '6LdJTCMlAAAAAIWR-u5IgtLRkIy07ctNezMPaDaX';
+
+    const RATE_LIMITER_EXPIRATION = 20; // 20 second
+
+
 
     public static bool $origin = true;
     public static array $databases = [
@@ -58,5 +61,20 @@ class Config
     {
 
         return self::base_url(Header::getServer('REQUEST_URI'));
+    }
+
+    public static function path_rate_limiter(): string
+    {
+        return Header::getServer('DOCUMENT_ROOT') . '/Temp/RateLimiter/';
+    }
+
+    public static function path_sessions(): string
+    {
+        return Header::getServer('DOCUMENT_ROOT') . '/Temp/Sessions/';
+    }
+
+    public static function path_uploads(): string
+    {
+        return Header::getServer('DOCUMENT_ROOT') . '/Temp/Uploads/';
     }
 }
