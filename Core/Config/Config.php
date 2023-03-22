@@ -12,6 +12,9 @@ class Config
     const SMTP_PORT = 465;
     const SMTP_MAILER = 'Mailer';
 
+    const csrfTokenName = 'csrftoken';
+    const csrfTokenNameSession = 'csrftoken';
+
     public static bool $origin = true;
     public static array $databases = [
         'default' => [

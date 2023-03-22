@@ -12,6 +12,10 @@ class Session
     {
         $_SESSION[$key] = $value;
     }
+    public static function has($key): bool
+    {
+        return isset($_SESSION[$key]);
+    }
 
     public static function get($key)
     {
