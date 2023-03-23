@@ -2,7 +2,7 @@
 Sistemin genel olarak ayarlarini *`Core/Config/Config.php`* dosyasi uzerinden yapmak gerekmektedir. Sistemin genel olarak bilgileri bu alanda yer almakta olup belirli ozellikleri bu kisimdan Aktif/Pasif edebilirsiniz.
 
 |Property|Type|Default|Description|
-|--|--|--|--|--|
+|--|--|--|--|
 |$base_url|String|http://localhost|Web sitenizin linkinin yer aldigi ve cogu yonlendirmelerin kapsandigi genel sabit.|
 |SMTP_HOST|String|random|smtp baglanti adresi ornk: smtp.example.com|
 |SMTP_USERNAME|String|random|smtp kullanici adi ornk: name@example.com|
