@@ -3,10 +3,12 @@ namespace Core\Config;
 
 class FileStorage implements StorageInterface
 {
-    private $directory;
+    private mixed $directory;
+    private string $mime;
 
-    public function __construct($directory)
+    public function __construct($directory, $mime = '.dat')
     {
+        $this->mime = $mime;
         $this->directory = $directory;
     }
 
@@ -53,6 +55,6 @@ class FileStorage implements StorageInterface
 
     private function getFile($key): string
     {
-        return $this->directory . '/' . md5($key) . '.dat';
+        return $this->directory . '/' . md5($key) . $this->mime;
     }
 }

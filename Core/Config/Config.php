@@ -11,8 +11,8 @@ class Config
     const SMTP_PASSWORD = '';
     const SMTP_PORT = 465;
     const SMTP_MAILER = 'Mailer';
-    const csrfTokenName = 'csrftoken';
-    const csrfTokenNameSession = 'csrftoken';
+    const CSRF_TOKEN_NAME = 'csrftoken';
+    const CSRF_TOKEN_NAME_SESSION = 'csrftoken';
     const RECAPTCHA_SECRET_KEY = '6LdJTCMlAAAAAKhYb8bs7LmOoJqToHPzIdh5BBoa';
     const RECAPTCHA_SITE_KEY = '6LdJTCMlAAAAAIWR-u5IgtLRkIy07ctNezMPaDaX';
 
@@ -70,6 +70,11 @@ class Config
     public static function path_rate_limiter(): string
     {
         return Header::getServer('DOCUMENT_ROOT') . '/Temp/RateLimiter/';
+    }
+
+    public static function path_cache(): string
+    {
+        return Header::getServer('DOCUMENT_ROOT') . '/Temp/Cache/';
     }
 
     public static function path_sessions(): string

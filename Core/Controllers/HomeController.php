@@ -8,7 +8,6 @@ use Twig\Error\SyntaxError;
 class HomeController extends RootController
 {
 
-
     /**
      * @throws RuntimeError
      * @throws SyntaxError
@@ -16,7 +15,6 @@ class HomeController extends RootController
      */
     public function index(): string
     {
-
         return self::view('index');
     }
 

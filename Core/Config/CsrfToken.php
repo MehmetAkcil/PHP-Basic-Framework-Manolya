@@ -14,19 +14,19 @@ class CsrfToken
     public function __construct()
     {
         $this->token = bin2hex(random_bytes(32));
-        Session::set(Config::csrfTokenNameSession, $this->token);
+        Session::set(Config::CSRF_TOKEN_NAME_SESSION, $this->token);
     }
 
     public function getToken(): string
     {
-        return Session::has(Config::csrfTokenNameSession) ? Session::get(Config::csrfTokenNameSession) : $this->token;
+        return Session::has(Config::CSRF_TOKEN_NAME_SESSION) ? Session::get(Config::CSRF_TOKEN_NAME_SESSION) : $this->token;
     }
 
     public function verifyToken($token): bool
     {
 
-        if (Session::has(Config::csrfTokenNameSession) && Session::get(Config::csrfTokenNameSession) === $token) {
-            Session::delete(Config::csrfTokenNameSession);
+        if (Session::has(Config::CSRF_TOKEN_NAME_SESSION) && Session::get(Config::CSRF_TOKEN_NAME_SESSION) === $token) {
+            Session::delete(Config::CSRF_TOKEN_NAME_SESSION);
             return true;
         }
         return false;
@@ -36,7 +36,7 @@ class CsrfToken
     {
         return sprintf(
             '<input type="hidden" name="%s" value="%s">',
-            Config::csrfTokenName,
+            Config::CSRF_TOKEN_NAME,
             $this->getToken()
         );
     }

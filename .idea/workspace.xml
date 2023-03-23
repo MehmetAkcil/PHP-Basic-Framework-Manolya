@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="twigview rename view method">
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="ip limiter status config add">
+      <change afterPath="$PROJECT_DIR$/Public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Temp/Cache/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Temp/RateLimiter/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Temp/Sessions/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Temp/Uploads/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/IpRestrictor.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/IpRestrictor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/CsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/CsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/FileStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/FileStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Public/Assets/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Cache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Public/Assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Core/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/Uploads/Admin/file.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +66,10 @@
       <path value="$PROJECT_DIR$/vendor/leafs/exception" />
       <path value="$PROJECT_DIR$/vendor/leafs/anchor" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
   <component name="ProblemsViewState">
@@ -73,7 +86,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/paketsatisold",
+    "last_opened_file_path": "C:/xampp/htdocs/paketsatisold/Temp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,6 +102,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\paketsatisold\Temp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\paketsatisold" />
       <recent name="C:\xampp\htdocs\paketsatisold\Core\Public" />
@@ -109,6 +125,7 @@
       <workItem from="1679363392728" duration="191000" />
       <workItem from="1679389831370" duration="18000" />
       <workItem from="1679428859675" duration="10858000" />
+      <workItem from="1679571020594" duration="2228000" />
     </task>
     <task id="LOCAL-00001" summary="fix1">
       <created>1679440230022</created>
@@ -320,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679528068232</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="ip limiter status config add">
+      <created>1679529568576</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1679529568576</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +378,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="router system static convert" />
     <MESSAGE value="Libraries system add" />
     <MESSAGE value="Public assets add" />
     <MESSAGE value="autoload fix1" />
@@ -379,7 +402,8 @@
     <MESSAGE value="ip limiter config limit const add" />
     <MESSAGE value="request and respond conf" />
     <MESSAGE value="twigview rename view method" />
-    <option name="LAST_COMMIT_MESSAGE" value="twigview rename view method" />
+    <MESSAGE value="ip limiter status config add" />
+    <option name="LAST_COMMIT_MESSAGE" value="ip limiter status config add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
