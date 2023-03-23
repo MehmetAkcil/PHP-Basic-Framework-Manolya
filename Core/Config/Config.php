@@ -24,6 +24,9 @@ class Config
     const IP_RESTRICTOR_ALLOWED = ['127.0.0.1', '192.168.1.1'];
 
 
+    const JWT_SECRET_TOKEN = 'hajstu6ts7n459j0qhgdrqnur8';
+
+
     public static bool $origin = TRUE;
     public static array $databases = [
         'default' => [

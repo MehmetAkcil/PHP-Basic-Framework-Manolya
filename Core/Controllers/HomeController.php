@@ -1,6 +1,9 @@
 <?php
 namespace Core\Controllers;
 
+use Core\Config\Config;
+use Core\Config\Header;
+use Core\Config\JWT;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
