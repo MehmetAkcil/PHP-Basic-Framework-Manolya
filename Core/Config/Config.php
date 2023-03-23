@@ -13,8 +13,8 @@ class Config
     const SMTP_MAILER = 'Mailer';
     const CSRF_TOKEN_NAME = 'csrftoken';
     const CSRF_TOKEN_NAME_SESSION = 'csrftoken';
-    const RECAPTCHA_SECRET_KEY = '6LdJTCMlAAAAAKhYb8bs7LmOoJqToHPzIdh5BBoa';
-    const RECAPTCHA_SITE_KEY = '6LdJTCMlAAAAAIWR-u5IgtLRkIy07ctNezMPaDaX';
+    const RECAPTCHA_SECRET_KEY = '6LdJTCMlAAAAAKhYb8bs7LmOoJqToHPzIdh000000';
+    const RECAPTCHA_SITE_KEY = '6LdJTCMlAAAAAIWR-u5IgtLRkIy07ctNez000000';
 
     const RATE_LIMITER_STATUS = FALSE;
     const RATE_LIMITER_EXPIRATION = 20; // 20 second

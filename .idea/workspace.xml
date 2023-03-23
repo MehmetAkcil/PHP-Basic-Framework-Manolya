@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: Cache Class&#10;add: Temp Folders">
-      <change afterPath="$PROJECT_DIR$/Core/Config/JWT.php" afterDir="false" />
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: JWT Class&#10;add: Conifg jwt secret key">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,8 @@
       <workItem from="1679389831370" duration="18000" />
       <workItem from="1679428859675" duration="10858000" />
       <workItem from="1679571020594" duration="2368000" />
-      <workItem from="1679573737955" duration="1576000" />
+      <workItem from="1679573737955" duration="3211000" />
+      <workItem from="1679600281118" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="fix1">
       <created>1679440230022</created>
@@ -343,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679573579228</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add: JWT Class&#10;add: Conifg jwt secret key">
+      <created>1679575369718</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1679575369718</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +383,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Public assets add" />
     <MESSAGE value="autoload fix1" />
     <MESSAGE value="error manager fix 1" />
     <MESSAGE value="php mailer add" />
@@ -402,7 +407,8 @@
     <MESSAGE value="twigview rename view method" />
     <MESSAGE value="ip limiter status config add" />
     <MESSAGE value="add: Cache Class&#10;add: Temp Folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: Cache Class&#10;add: Temp Folders" />
+    <MESSAGE value="add: JWT Class&#10;add: Conifg jwt secret key" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: JWT Class&#10;add: Conifg jwt secret key" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
