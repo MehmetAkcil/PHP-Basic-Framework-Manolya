@@ -25,3 +25,9 @@ Sistemin genel olarak ayarlarini *`Core/Config/Config.php`* dosyasi uzerinden ya
 |path_rate_limiter|Function|null|RateLimiter eklentisinin Temp dosya yolunu belirtir|
 |path_sessions|Function|null|Oturum bilgilerinin Temp dosya yolunu belirtir|
 |path_uploads|Function|null|Yuklenen dosyalarin Temp dosya yolunu belirtir|
+
+
+|  rthtrh | trhtrht  |
+| ------------ | ------------ |
+| trhtrh  | trhtrht  |
+|rtrthtrht   |  trhrt |
