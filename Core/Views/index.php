@@ -16,5 +16,8 @@
     Bu sistem daha kolay rest api yazmak icin gelistirilmeye Mehmet AKCIL tarafindan baslandi.
 </p>
 
+<p>
+    <?= $title ?>
+</p>
 </body>
 </html>

@@ -89,4 +89,9 @@ class Config
     {
         return Header::getServer('DOCUMENT_ROOT') . '/Temp/Uploads/';
     }
+
+    public static function path_views($path = ''): string
+    {
+        return Header::getServer('DOCUMENT_ROOT') . '/Core/Views/' . $path;
+    }
 }

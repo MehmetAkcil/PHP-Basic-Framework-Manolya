@@ -2,13 +2,20 @@
 namespace Core\Controllers;
 
 
+use Exception;
+
 class HomeController extends RootController
 {
 
-    public function index(): string
+    /**
+     * @throws Exception
+     */
+    public function index(): null
     {
 
-        return self::view('index');
+        return self::view('auth/index', [
+            'title' => 'test'
+        ]);
     }
 
     public function test(): string

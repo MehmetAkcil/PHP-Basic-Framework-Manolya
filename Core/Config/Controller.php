@@ -2,12 +2,19 @@
 namespace Core\Config;
 
 
+use Exception;
+
 class Controller
 {
 
-    protected static function view($tpl, $data = []): string
+    /**
+     * @throws Exception
+     */
+    protected static function view($tpl, $data = []): null
     {
-        return 'suanda yapilmayi bekliyor';
+        $view = new View($tpl, $data);
+
+        return $view->renderer();
     }
 
 
