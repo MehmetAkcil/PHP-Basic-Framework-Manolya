@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: QueryBuilder class">
-      <change afterPath="$PROJECT_DIR$/Core/Config/FileOperations.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Views/auth/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Views/index.php" afterDir="false" />
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: Views system">
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +113,7 @@
       <workItem from="1679571020594" duration="2368000" />
       <workItem from="1679573737955" duration="3211000" />
       <workItem from="1679600281118" duration="5151000" />
-      <workItem from="1679624033212" duration="12864000" />
+      <workItem from="1679624033212" duration="12992000" />
     </task>
     <task id="LOCAL-00001" summary="fix1">
       <created>1679440230022</created>
@@ -367,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679660487318</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add: Views system">
+      <created>1679665028371</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1679665028371</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +401,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="php mailer add" />
     <MESSAGE value="Router fix" />
     <MESSAGE value="system optimzation" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
@@ -426,7 +425,8 @@
     <MESSAGE value="add: JWT Class&#10;add: Conifg jwt secret key" />
     <MESSAGE value="edit: Config" />
     <MESSAGE value="add: QueryBuilder class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: QueryBuilder class" />
+    <MESSAGE value="add: Views system" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: Views system" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -7,7 +7,7 @@ ini_set("error_reporting", E_ALL & ~E_DEPRECATED);
 
 
 // Check PHP version.
-$minPhpVersion = '8.2';
+$minPhpVersion = '8.1';
 if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
     exit('Your PHP version needs to be '.$minPhpVersion.' or higher. Current version is '.PHP_VERSION);
 }
