@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: Views system">
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="edit: php version 8.2 to 8.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +115,7 @@
       <workItem from="1679571020594" duration="2368000" />
       <workItem from="1679573737955" duration="3211000" />
       <workItem from="1679600281118" duration="5151000" />
-      <workItem from="1679624033212" duration="12992000" />
+      <workItem from="1679624033212" duration="13098000" />
     </task>
     <task id="LOCAL-00001" summary="fix1">
       <created>1679440230022</created>
@@ -367,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679665028371</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="edit: php version 8.2 to 8.2">
+      <created>1679665161575</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1679665161575</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +410,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Router fix" />
     <MESSAGE value="system optimzation" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="comt" />
@@ -426,7 +434,8 @@
     <MESSAGE value="edit: Config" />
     <MESSAGE value="add: QueryBuilder class" />
     <MESSAGE value="add: Views system" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: Views system" />
+    <MESSAGE value="edit: php version 8.2 to 8.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit: php version 8.2 to 8.2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

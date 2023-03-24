@@ -3,6 +3,7 @@ use Core\Config\Config;
 use Core\Config\IpRestrictor;
 use Core\Config\RateLimiter;
 
+
 spl_autoload_register(function ($class) {
     // namespace'leri ve dosya yollarını belirleyin
     $namespaces = array(
@@ -25,6 +26,7 @@ spl_autoload_register(function ($class) {
         }
     }
 });
+\Core\Config\Session::start();
 
 require 'vendor/autoload.php';
 
@@ -36,7 +38,6 @@ if(Config::RATE_LIMITER_STATUS){
     $ipLimit = new RateLimiter();
     $ipLimit->checkRequestCount();
 }
-
 
 if(Config::IP_RESTRICTOR_STATUS){
     $restrictor = new IpRestrictor(Config::IP_RESTRICTOR_ALLOWED);
