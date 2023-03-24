@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="fix: Model class">
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="fix: Controller null edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Redirect.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
       <workItem from="1679573737955" duration="3211000" />
       <workItem from="1679600281118" duration="5151000" />
       <workItem from="1679624033212" duration="13336000" />
-      <workItem from="1679689148237" duration="20000" />
+      <workItem from="1679689148237" duration="1573000" />
     </task>
     <task id="LOCAL-00001" summary="fix1">
       <created>1679440230022</created>
@@ -391,7 +390,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679665463559</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fix: Controller null edit">
+      <created>1679689186977</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1679689186977</updated>
+    </task>
+    <task id="LOCAL-00041" summary="fix: Controller null edit">
+      <created>1679689267733</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1679689267733</updated>
+    </task>
+    <task id="LOCAL-00042" summary="fix: Controller null edit">
+      <created>1679689310323</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1679689310323</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +445,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="comt" />
     <MESSAGE value="edit" />
     <MESSAGE value="router fix" />
     <MESSAGE value="model update" />
@@ -450,7 +469,8 @@
     <MESSAGE value="edit: php version 8.2 to 8.2" />
     <MESSAGE value="fix: Session start" />
     <MESSAGE value="fix: Model class" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Model class" />
+    <MESSAGE value="fix: Controller null edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Controller null edit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

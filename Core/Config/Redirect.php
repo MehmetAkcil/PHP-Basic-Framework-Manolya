@@ -1,17 +1,19 @@
 <?php
 namespace Core\Config;
 
+use JetBrains\PhpStorm\NoReturn;
+
 class Redirect extends Session
 {
-    public static function to($url)
+    #[NoReturn] public static function to($url)
     {
-        header("Location: $url");
+        Header::set('Location', $url);
         exit();
     }
 
-    public static function back()
+    #[NoReturn] public static function back()
     {
-        $referer = $_SERVER['HTTP_REFERER'] ?? '/';
+        $referer = Header::getServer('HTTP_REFERER') ?? '/';
         Header::set('Location', $referer);
         exit();
     }
