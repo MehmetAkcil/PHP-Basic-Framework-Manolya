@@ -1,0 +1,8 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+      "ext-pdo": "*",
+      "ext-fileinfo": "*",
+      "ext-curl": "*"
+    }
+}
