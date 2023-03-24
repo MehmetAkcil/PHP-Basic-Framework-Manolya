@@ -1,40 +1,86 @@
 <?php
-
 namespace Core\Config;
 
-class Model extends Database
+use PDO;
+use PDOException;
+
+class Database
 {
 
-    public function findAll()
+    public String $database = 'default';
+
+    private PDO $conn;
+
+
+    public function __construct()
     {
-        return $this->getRow("SELECT * FROM {$this->tableName}");
+
+
+        $databases = Config::$databases;
+
+        $dsn = 'mysql:host=' . $databases[$this->database]['host'] . ';dbname=' . $databases[$this->database]['database'];
+
+        $options = array(
+            PDO::ATTR_PERSISTENT => true,
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+        );
+
+        try {
+            $this->conn = new PDO($dsn, $databases[$this->database]['username'], $databases[$this->database]['password'], $options);
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+
     }
 
-    public function find(Int $ID)
+    public function query($sql, $params = []): false|\PDOStatement
     {
-        return $this->getRow("SELECT * FROM {$this->tableName} WHERE {$this->primaryId} = ?", [
-            $ID
-        ]);
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute($params);
+        return $stmt;
     }
 
-    public function findWhere($where)
+    public function getRow($sql, $params = [])
     {
-        return $this->getRow("SELECT * FROM {$this->tableName} WHERE {$where}");
+        $stmt = $this->query($sql, $params);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function insert(Array $data): false|string
+    public function getRows($sql, $params = []): false|array
     {
-        return $this->insertTable($this->tableName, $data);
+        $stmt = $this->query($sql, $params);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function update(Array $data, Int $id): false|string
+    public function insertTable($table, $data): false|string
     {
-        return $this->updateTable($this->tableName, $data, $this->primaryId . ' = ' . $id);
+        $columns = implode(',', array_keys($data));
+        $placeholders = implode(',', array_fill(0, count($data), '?'));
+
+        $sql = "INSERT INTO $table ($columns) VALUES ($placeholders)";
+
+        $this->query($sql, array_values($data));
+
+        return $this->conn->lastInsertId();
     }
 
-    public function updateWhere(Array $data, Int $where): false|string
+    public function updateTable($table, $data, $where, $whereValue): false|string
     {
-        return $this->updateTable($this->tableName, $data, $where);
+        $columns = array_keys($data);
+        $set = implode('=?,', $columns) . '=?';
+
+        $sql = "UPDATE $table SET $set WHERE $where = ?";
+
+        $params = array_merge(array_values($data), [$whereValue]);
+
+        $this->query($sql, $params);
+
+        return $this->conn->lastInsertId();
     }
 
+    public function deleteTable($table, $where): void
+    {
+        $sql = "DELETE FROM $table WHERE $where";
+        $this->query($sql, $where);
+    }
 }

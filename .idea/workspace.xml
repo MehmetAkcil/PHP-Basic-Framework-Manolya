@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: JWT Class&#10;add: Conifg jwt secret key">
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="edit: Config">
+      <change afterPath="$PROJECT_DIR$/Core/Config/QueryBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Config/QueryBuilderTraits/LikeTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Config/QueryBuilderTraits/OtherQueryTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Config/QueryBuilderTraits/SelectTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Config/QueryBuilderTraits/WhereTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Config/View.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Redirect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Middlewares/AuthMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Middlewares/AuthMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Views/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +67,6 @@
       <path value="$PROJECT_DIR$/vendor/leafs/exception" />
       <path value="$PROJECT_DIR$/vendor/leafs/anchor" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
@@ -116,7 +125,8 @@
       <workItem from="1679428859675" duration="10858000" />
       <workItem from="1679571020594" duration="2368000" />
       <workItem from="1679573737955" duration="3211000" />
-      <workItem from="1679600281118" duration="321000" />
+      <workItem from="1679600281118" duration="5151000" />
+      <workItem from="1679624033212" duration="8917000" />
     </task>
     <task id="LOCAL-00001" summary="fix1">
       <created>1679440230022</created>
@@ -349,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679575369718</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="edit: Config">
+      <created>1679600792909</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1679600792909</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +400,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="autoload fix1" />
     <MESSAGE value="error manager fix 1" />
     <MESSAGE value="php mailer add" />
     <MESSAGE value="Router fix" />
@@ -408,7 +424,8 @@
     <MESSAGE value="ip limiter status config add" />
     <MESSAGE value="add: Cache Class&#10;add: Temp Folders" />
     <MESSAGE value="add: JWT Class&#10;add: Conifg jwt secret key" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: JWT Class&#10;add: Conifg jwt secret key" />
+    <MESSAGE value="edit: Config" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit: Config" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

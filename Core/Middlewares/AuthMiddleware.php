@@ -11,9 +11,9 @@ class AuthMiddleware
     public function index()
     {
         //Session::set('auth', 'wergergre');
-        if (Session::get('auth') === null) {
+        if (! Session::has('auth')) {
 
-            Respond::responseAuth([
+            echo Respond::responseAuth([
                 'message' => 'Auth invalid'
             ]);
             exit();

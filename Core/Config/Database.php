@@ -6,7 +6,6 @@ use PDOException;
 
 class Database
 {
-
     public String $database = 'default';
 
     private PDO $conn;
@@ -14,8 +13,6 @@ class Database
 
     public function __construct()
     {
-
-
         $databases = Config::$databases;
 
         $dsn = 'mysql:host=' . $databases[$this->database]['host'] . ';dbname=' . $databases[$this->database]['database'];
@@ -33,7 +30,7 @@ class Database
 
     }
 
-    public function query($sql, $params = [])
+    public function query($sql, $params = []): false|\PDOStatement
     {
         $stmt = $this->conn->prepare($sql);
         $stmt->execute($params);
@@ -46,7 +43,7 @@ class Database
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function getRows($sql, $params = [])
+    public function getRows($sql, $params = []): false|array
     {
         $stmt = $this->query($sql, $params);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -77,7 +74,7 @@ class Database
         return $this->conn->lastInsertId();
     }
 
-    public function deleteTable($table, $where)
+    public function deleteTable($table, $where): void
     {
         $sql = "DELETE FROM $table WHERE $where";
         $this->query($sql, $where);

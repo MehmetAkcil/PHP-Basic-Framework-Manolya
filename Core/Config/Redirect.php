@@ -12,7 +12,7 @@ class Redirect extends Session
     public static function back()
     {
         $referer = $_SERVER['HTTP_REFERER'] ?? '/';
-        header("Location: $referer");
+        Header::set('Location', $referer);
         exit();
     }
 

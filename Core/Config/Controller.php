@@ -1,34 +1,13 @@
 <?php
 namespace Core\Config;
 
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
-use Twig\Extension\CoreExtension;
-use Twig\TwigFunction;
 
 class Controller
 {
-    /**
-     * @throws SyntaxError
-     * @throws RuntimeError
-     * @throws LoaderError
-     */
+
     protected static function view($tpl, $data = []): string
     {
-
-        $loader = new \Twig\Loader\FilesystemLoader($_SERVER['DOCUMENT_ROOT'] . '/Core/Views');
-        $twig = new \Twig\Environment($loader);
-
-        $twig->getExtension(CoreExtension::class)->setTimezone('Europe/Istanbul');
-
-        $twig->addFunction(new TwigFunction('print', function ($asset) {
-            return print_r($asset, true);
-        }));
-
-        $tpl = !stripos($tpl, '.twig') ? $tpl . '.twig' : $tpl;
-
-        return $twig->render($tpl, $data);
+        return 'suanda yapilmayi bekliyor';
     }
 
 
