@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="fix: Controller null edit">
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: Composer file">
+      <change afterPath="$PROJECT_DIR$/Core/Config/FormValidator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Redirect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +75,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/paketsatisold/Temp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/ecommerce&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -116,6 +119,13 @@
       <workItem from="1679600281118" duration="5151000" />
       <workItem from="1679624033212" duration="13336000" />
       <workItem from="1679689148237" duration="1573000" />
+      <workItem from="1679695447624" duration="56000" />
+      <workItem from="1679742516920" duration="6000" />
+      <workItem from="1679752151151" duration="366000" />
+      <workItem from="1679752604753" duration="70000" />
+      <workItem from="1679752685345" duration="535000" />
+      <workItem from="1679776297182" duration="44000" />
+      <workItem from="1679828063383" duration="3679000" />
     </task>
     <task id="LOCAL-00001" summary="fix1">
       <created>1679440230022</created>
@@ -411,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679689310323</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add: Composer file">
+      <created>1679695473764</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1679695473764</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edit" />
     <MESSAGE value="router fix" />
     <MESSAGE value="model update" />
     <MESSAGE value="index edit" />
@@ -470,7 +486,8 @@
     <MESSAGE value="fix: Session start" />
     <MESSAGE value="fix: Model class" />
     <MESSAGE value="fix: Controller null edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Controller null edit" />
+    <MESSAGE value="add: Composer file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: Composer file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

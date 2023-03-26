@@ -2,6 +2,7 @@
 namespace Core\Controllers;
 
 
+use Core\Config\FormValidator;
 use Exception;
 
 class HomeController extends RootController
@@ -10,9 +11,8 @@ class HomeController extends RootController
     /**
      * @throws Exception
      */
-    public function index()
+    public function index(): null
     {
-
         return self::view('auth/index', [
             'title' => 'test'
         ]);
