@@ -14,7 +14,7 @@ class Request
         }
     }
 
-    public static function post($name)
+    public static function post($name = false)
     {
         if($name){
             return $_POST[$name] ?? false;
@@ -23,7 +23,7 @@ class Request
         }
     }
 
-    public static function request($name)
+    public static function request($name = false)
     {
         parse_str(file_get_contents('php://input'), $_REQ);
         if($name){

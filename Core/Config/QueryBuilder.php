@@ -76,7 +76,7 @@ class QueryBuilder extends Database
     public function get(): false|array //verileri getir
     {
         $sql = $this->builder();
-        return $this->getRows($sql);
+        return count($this->getRows($sql)) <= 0 ? false : $this->getRows($sql);
     }
 
     public function first() //veri getir
