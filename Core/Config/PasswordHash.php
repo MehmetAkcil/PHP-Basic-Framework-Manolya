@@ -11,7 +11,7 @@ class PasswordHash {
         return password_hash($password, PASSWORD_BCRYPT, ['cost' => self::$cost]);
     }
 
-    public function verify($password, $hash): bool
+    public static function verify($password, $hash): bool
     {
         return password_verify($password, $hash);
     }

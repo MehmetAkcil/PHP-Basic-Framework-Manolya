@@ -61,14 +61,15 @@ class Database
         return $this->conn->lastInsertId();
     }
 
-    public function updateTable($table, $data, $where): false|string
+    public function updateTable($table, $data, $where, $whereValue)
     {
         $columns = array_keys($data);
         $set = implode('=?,', $columns) . '=?';
 
         $sql = "UPDATE $table SET $set WHERE $where";
 
-        $params = array_merge(array_values($data), array_values($where));
+        $params = array_merge(array_values($data), (array) $whereValue);
+
         $this->query($sql, $params);
 
         return $this->conn->lastInsertId();

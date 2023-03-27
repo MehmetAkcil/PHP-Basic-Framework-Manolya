@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: Form validation" />
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: Password Has&#10;fix: Request and QueryBuilder" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,28 +64,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/ecommerce&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/paketsatisold/Core/Config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\paketsatisold\Core\Config" />
       <recent name="C:\xampp\htdocs\paketsatisold\Temp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -120,6 +121,7 @@
       <workItem from="1679752685345" duration="535000" />
       <workItem from="1679776297182" duration="44000" />
       <workItem from="1679828063383" duration="3875000" />
+      <workItem from="1679834867348" duration="79000" />
     </task>
     <task id="LOCAL-00001" summary="fix1">
       <created>1679440230022</created>
@@ -429,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679831946064</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="add: Password Has&#10;fix: Request and QueryBuilder">
+      <created>1679834917966</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1679834917966</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="model update" />
     <MESSAGE value="index edit" />
     <MESSAGE value="twig add" />
     <MESSAGE value="middleware in router update" />
@@ -488,7 +496,8 @@
     <MESSAGE value="fix: Controller null edit" />
     <MESSAGE value="add: Composer file" />
     <MESSAGE value="add: Form validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: Form validation" />
+    <MESSAGE value="add: Password Has&#10;fix: Request and QueryBuilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: Password Has&#10;fix: Request and QueryBuilder" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

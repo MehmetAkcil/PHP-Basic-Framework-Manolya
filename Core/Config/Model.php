@@ -17,9 +17,9 @@ class Model extends Database
         ]);
     }
 
-    public function findWhere($where)
+    public function findWhere($where, $value)
     {
-        return $this->getRow("SELECT * FROM {$this->tableName} WHERE {$where}");
+        return $this->getRow("SELECT * FROM {$this->tableName} WHERE {$where} = ?", [$value]);
     }
 
     public function insert(Array $data): false|string
@@ -27,14 +27,14 @@ class Model extends Database
         return $this->insertTable($this->tableName, $data);
     }
 
-    public function update(Array $data, Int $id): false|string
+    public function update(Int $id, Array $data)
     {
-        return $this->updateTable($this->tableName, $data, $this->primaryId . ' = ' . $id);
+        return $this->updateTable($this->tableName, $data, $this->primaryId . ' = ?', $id);
     }
 
-    public function updateWhere(Array $data, Int $where): false|string
+    public function updateWhere($where, $id, Array $data)
     {
-        return $this->updateTable($this->tableName, $data, $where);
+        return $this->updateTable($this->tableName, $data, "{$where} ?", $id);
     }
 
 }
