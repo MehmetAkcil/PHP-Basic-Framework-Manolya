@@ -84,18 +84,28 @@ class Router
     private static function callHandler($handler, $matches)
     {
         //middleware kontrolu yap
-        $middlewarePath = $_SERVER['DOCUMENT_ROOT'] . '/Core/Middlewares/' . $handler[1] . '.php';
-
-        if(file_exists($middlewarePath)){
-            $midllewareController = '\\Core\Middlewares\\' . $handler[1];
-            $controller = new $midllewareController;
-            echo call_user_func_array([$controller, 'index'], []);
-        }
+        self::middlewareRunning($handler);
 
         $handlerParts = explode('@', $handler[0]);
         $controllerName = '\\Core\Controllers\\' . $handlerParts[0];
         $methodName = $handlerParts[1];
         $controller = new $controllerName;
         return call_user_func_array([$controller, $methodName], $matches);
+    }
+
+    protected static function middlewareRunning($handler): void
+    {
+        $middlewarePath = $_SERVER['DOCUMENT_ROOT'] . '/Core/Middlewares/' . $handler[1] . '.php';
+
+        if(file_exists($middlewarePath)){
+            $middlewareController = '\\Core\Middlewares\\' . $handler[1];
+            $controller = new $middlewareController;
+            $midd = call_user_func_array([$controller, 'index'], []);
+
+            if($midd !== true){
+                exit($midd);
+            }
+        }
+
     }
 }
