@@ -10,7 +10,7 @@ class Controller
     /**
      * @throws Exception
      */
-    protected static function view($tpl, $data = [])
+    protected static function view($tpl, $data = []): null
     {
         $view = new View($tpl, $data);
 

@@ -19,8 +19,14 @@ use Exception;
 
     public function get($url, $params = []): bool|string
     {
-        $query = http_build_query($params);
-        curl_setopt($this->ch, CURLOPT_URL, $url . '?' . $query);
+        if (count($params) <= 0) {
+            curl_setopt($this->ch, CURLOPT_URL, $url);
+        } else {
+            $query = http_build_query($params);
+            curl_setopt($this->ch, CURLOPT_URL, $url . '?' . $query);
+        }
+
+
         return $this->execute();
     }
 
@@ -74,9 +80,46 @@ use Exception;
         curl_setopt($this->ch, CURLOPT_COOKIEJAR, $this->cookieJar);
     }
 
-    public function getCookieJar() {
+    public function getCookieJar()
+    {
         return $this->cookieJar;
     }
+
+    public function async($urls): array
+    {
+        $multi = curl_multi_init();
+        $handles = [];
+
+        // create a curl handle for each URL
+        foreach ($urls as $url) {
+            $handle = curl_init();
+            curl_setopt($handle, CURLOPT_URL, $url);
+            curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($handle, CURLOPT_FOLLOWLOCATION, true);
+            curl_setopt($handle, CURLOPT_TIMEOUT, 60);
+            curl_multi_add_handle($multi, $handle);
+            $handles[] = $handle;
+        }
+
+        // execute the handles
+        $running = null;
+        do {
+            curl_multi_exec($multi, $running);
+        } while ($running);
+
+        // retrieve the responses
+        $responses = [];
+        foreach ($handles as $handle) {
+            $response = curl_multi_getcontent($handle);
+            $responses[] = json_decode($response, true);
+            curl_multi_remove_handle($multi, $handle);
+        }
+
+        curl_multi_close($multi);
+
+        return $responses;
+    }
+
 
     public function __destruct()
     {

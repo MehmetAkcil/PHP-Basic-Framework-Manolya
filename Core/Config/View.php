@@ -22,7 +22,7 @@ class View
     /**
      * @throws Exception
      */
-    public function renderer(): void
+    public function renderer(): true
     {
         $path = Config::path_views($this->fileName . '.php');
 
@@ -32,6 +32,7 @@ class View
         } else {
             throw new Exception('Template file not found: ' . $this->fileName);
         }
+        return true;
     }
 
 }
