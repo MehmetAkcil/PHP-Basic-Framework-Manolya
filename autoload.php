@@ -34,6 +34,7 @@ require 'vendor/autoload.php';
 
 if(Config::$origin){
     \Core\Config\Header::set('Access-Control-Allow-Origin', '*');
+    \Core\Config\Header::set('Access-Control-Allow-Headers', 'Authorization, Content-Type');
 }
 
 if(Config::RATE_LIMITER_STATUS){
