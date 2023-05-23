@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: Example">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Config/HelperLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Helpers/test.php" afterDir="false" />
+    <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="edit: Helper Name">
+      <change afterPath="$PROJECT_DIR$/Core/Config/IniConfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/google-ads.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/DotEnv.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/DotEnv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/HelperLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/HelperLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Helpers/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Helpers/system.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,28 +135,7 @@
       <workItem from="1679942328996" duration="2255000" />
       <workItem from="1681415151330" duration="41000" />
       <workItem from="1683430421559" duration="48000" />
-      <workItem from="1684800672517" duration="1189000" />
-    </task>
-    <task id="LOCAL-00003" summary="namespaces system add">
-      <created>1679486426582</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679486426582</updated>
-    </task>
-    <task id="LOCAL-00004" summary="mutli connect database system add">
-      <created>1679489352459</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679489352459</updated>
-    </task>
-    <task id="LOCAL-00005" summary="mutli connect database system fix 1">
-      <created>1679489665699</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1679489665699</updated>
+      <workItem from="1684800672517" duration="1815000" />
     </task>
     <task id="LOCAL-00006" summary="mutli connect database system fix 2">
       <created>1679489728479</created>
@@ -482,7 +459,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684801136511</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add: Helper And DotEnv">
+      <created>1684801890055</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1684801890055</updated>
+    </task>
+    <task id="LOCAL-00053" summary="add: Helper And DotEnv">
+      <created>1684801898581</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1684801898581</updated>
+    </task>
+    <task id="LOCAL-00054" summary="edit: Helper Name">
+      <created>1684801988989</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1684801988989</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,8 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="request curl add" />
-    <MESSAGE value="php rotuer system group method add" />
     <MESSAGE value="csrf token system add" />
     <MESSAGE value="google RECAPTCHA system add" />
     <MESSAGE value="ip limiter and temp folders add" />
@@ -541,7 +537,9 @@
     <MESSAGE value="fix: Model and Database Method" />
     <MESSAGE value="fix: Router middleware Method" />
     <MESSAGE value="add: Example" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: Example" />
+    <MESSAGE value="add: Helper And DotEnv" />
+    <MESSAGE value="edit: Helper Name" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit: Helper Name" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

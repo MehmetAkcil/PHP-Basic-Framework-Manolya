@@ -4,7 +4,7 @@ namespace Core\Config;
 class HelperLoader
 {
     protected static array $helpers = [
-        'test' => 'ArrayHelper',
+        'system' => 'system',
     ];
 
     public static function loadHelpers(): void

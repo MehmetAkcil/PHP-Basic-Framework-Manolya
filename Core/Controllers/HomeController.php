@@ -14,7 +14,8 @@ class HomeController extends RootController
     public function index(): void
     {
 
-        echo env('isim');
+//        echo env('isim');
+        echo ini_service('google-ads', 'client', 'id');
     }
 
     public function test(): string
