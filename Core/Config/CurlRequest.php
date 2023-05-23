@@ -57,10 +57,15 @@ use Exception;
         return $this->execute();
     }
 
-    public function setOpt($name, $data): void
+    public function setOpt($name, $data): bool
     {
-        curl_setopt($this->ch, $name, $data);
+        if (is_string($name) && defined($name)) {
+            $name = constant($name);
+        }
+
+        return curl_setopt($this->ch, $name, $data);
     }
+
 
     /**
      * @throws Exception
