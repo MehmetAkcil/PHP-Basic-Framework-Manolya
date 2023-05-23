@@ -2,7 +2,7 @@
 namespace Core\Controllers;
 
 
-use Core\Config\FormValidator;
+use Core\Config\DotEnv;
 use Exception;
 
 class HomeController extends RootController
@@ -11,11 +11,10 @@ class HomeController extends RootController
     /**
      * @throws Exception
      */
-    public function index()
+    public function index(): void
     {
-        return self::view('index', [
-            'title' => 'test'
-        ]);
+
+        echo env('isim');
     }
 
     public function test(): string

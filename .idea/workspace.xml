@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="863ebb10-da38-489f-8406-fbda27824616" name="Changes" comment="add: Example">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Config/HelperLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Helpers/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Config/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Config/DotEnv.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/DotEnv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/View.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,14 +137,7 @@
       <workItem from="1679942328996" duration="2255000" />
       <workItem from="1681415151330" duration="41000" />
       <workItem from="1683430421559" duration="48000" />
-      <workItem from="1684800672517" duration="445000" />
-    </task>
-    <task id="LOCAL-00002" summary="fix1">
-      <created>1679442217506</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679442217506</updated>
+      <workItem from="1684800672517" duration="1189000" />
     </task>
     <task id="LOCAL-00003" summary="namespaces system add">
       <created>1679486426582</created>
@@ -479,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684800903669</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="add: Example">
+      <created>1684801136511</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1684801136511</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

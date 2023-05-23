@@ -30,6 +30,8 @@ spl_autoload_register(function ($class) {
 
 require 'vendor/autoload.php';
 
+\Core\Config\HelperLoader::loadHelpers();
+
 if(Config::$origin){
     \Core\Config\Header::set('Access-Control-Allow-Origin', '*');
 }
