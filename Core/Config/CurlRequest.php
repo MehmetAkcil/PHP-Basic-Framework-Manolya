@@ -9,6 +9,8 @@ use Exception;
 {
     private false|\CurlHandle $ch;
 
+    public string $cookieJar;
+
     public function __construct()
     {
         $this->ch = curl_init();
@@ -17,6 +19,9 @@ use Exception;
         curl_setopt($this->ch, CURLOPT_TIMEOUT, 10);
     }
 
+    /**
+     * @throws Exception
+     */
     public function get($url, $params = []): bool|string
     {
         if (count($params) <= 0) {
@@ -30,6 +35,9 @@ use Exception;
         return $this->execute();
     }
 
+    /**
+     * @throws Exception
+     */
     public function post($url, $params = []): bool|string
     {
         curl_setopt($this->ch, CURLOPT_URL, $url);
@@ -38,6 +46,9 @@ use Exception;
         return $this->execute();
     }
 
+    /**
+     * @throws Exception
+     */
     public function put($url, $params = []): bool|string
     {
         curl_setopt($this->ch, CURLOPT_URL, $url);
@@ -70,11 +81,11 @@ use Exception;
     /**
      * @throws Exception
      */
-    private function execute()
+    private function execute(): bool|string
     {
         $response = curl_exec($this->ch);
         if ($response === false) {
-            throw new Exception(curl_error($this->ch));
+            throw new Exception(json_encode(["curl_error" => curl_error($this->ch), 'response' => $response]));
         }
         return $response;
     }
@@ -85,7 +96,7 @@ use Exception;
         curl_setopt($this->ch, CURLOPT_COOKIEJAR, $this->cookieJar);
     }
 
-    public function getCookieJar()
+    public function getCookieJar(): string
     {
         return $this->cookieJar;
     }
@@ -107,7 +118,7 @@ use Exception;
         }
 
         // execute the handles
-        $running = null;
+        $running = false;
         do {
             curl_multi_exec($multi, $running);
         } while ($running);
