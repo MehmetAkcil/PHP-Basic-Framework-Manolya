@@ -10,11 +10,11 @@ class Controller
     /**
      * @throws Exception
      */
-    protected static function view($tpl, $data = []): null
+    protected static function view($tpl, $data = []): void
     {
         $view = new View($tpl, $data);
 
-        return $view->renderer();
+        $view->renderer();
     }
 
 

@@ -11,9 +11,9 @@ class HomeController extends RootController
     /**
      * @throws Exception
      */
-    public function index(): null
+    public function index()
     {
-        return self::view('auth/index', [
+        return self::view('index', [
             'title' => 'test'
         ]);
     }

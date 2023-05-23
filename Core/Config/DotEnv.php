@@ -11,7 +11,6 @@ class DotEnv
         if ($filePath === null) {
             $filePath = $this->getDefaultEnvFilePath();
         }
-
         $this->loadEnvFile($filePath);
     }
 

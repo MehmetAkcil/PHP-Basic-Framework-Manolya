@@ -22,7 +22,7 @@ class View
     /**
      * @throws Exception
      */
-    public function renderer(): true
+    public function renderer()
     {
         $path = Config::path_views($this->fileName . '.php');
 
