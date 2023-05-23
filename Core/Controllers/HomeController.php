@@ -3,6 +3,7 @@ namespace Core\Controllers;
 
 
 use Core\Config\DotEnv;
+use Core\Config\HelperLoader;
 use Exception;
 
 class HomeController extends RootController
@@ -15,7 +16,11 @@ class HomeController extends RootController
     {
 
 //        echo env('isim');
-        echo ini_service('google-ads', 'client', 'id');
+//        echo ini_service('google-ads', 'client', 'id');
+//        HelperLoader::load('test');
+//        echo name('rgerg');
+
+
     }
 
     public function test(): string

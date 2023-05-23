@@ -20,4 +20,15 @@ class HelperLoader
 
         }
     }
+
+    public static function load($fileName): void
+    {
+        $filePath = __DIR__ . '/../Helpers/' . $fileName . '.php';
+        if (file_exists($filePath)) {
+            require_once $filePath;
+        } else {
+            throw new \RuntimeException("HelperLoader: Dosya bulunamadı: $filePath");
+        }
+    }
+
 }
