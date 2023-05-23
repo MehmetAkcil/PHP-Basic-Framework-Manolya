@@ -69,7 +69,8 @@ class DotEnv
 
     protected function getDefaultEnvFilePath(): string
     {
-        $basePath = realpath(__DIR__ . '/../');
+        $basePath = realpath(__DIR__ . '/../../');
+
         return $basePath . '/.env';
     }
 
