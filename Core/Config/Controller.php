@@ -7,6 +7,8 @@ use Exception;
 class Controller
 {
 
+    private string $templatePath = "Layouts";
+
     /**
      * @throws Exception
      */
@@ -15,6 +17,14 @@ class Controller
         $view = new View($tpl, $data);
 
         $view->renderer();
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function template($tpl, $data = []): string
+    {
+        return self::view("{$this->templatePath}/header", $data) . self::view($tpl, $data) . self::view("{$this->templatePath}/footer", $data);
     }
 
 
