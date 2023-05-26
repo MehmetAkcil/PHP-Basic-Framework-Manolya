@@ -40,13 +40,13 @@ class Database
     public function getRow($sql, $params = [])
     {
         $stmt = $this->query($sql, $params);
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+        return $stmt->fetch(PDO::FETCH_OBJ);
     }
 
     public function getRows($sql, $params = []): false|array
     {
         $stmt = $this->query($sql, $params);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
     public function insertTable($table, $data): false|string
