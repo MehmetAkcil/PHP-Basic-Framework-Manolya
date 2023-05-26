@@ -5,9 +5,9 @@ namespace Core\Config;
 class Model extends Database
 {
 
-    public function findAll()
+    public function findAll(): false|array
     {
-        return $this->getRow("SELECT * FROM {$this->tableName}");
+        return $this->getRows("SELECT * FROM {$this->tableName}");
     }
 
     public function find(Int $ID)
@@ -17,9 +17,14 @@ class Model extends Database
         ]);
     }
 
-    public function findWhere($where, $value): object
+    public function findWhere($where, $value)
     {
-        return (object) $this->getRow("SELECT * FROM {$this->tableName} WHERE {$where} = ?", [$value]);
+        return $this->getRow("SELECT * FROM {$this->tableName} WHERE {$where} = ?", [$value]);
+    }
+
+    public function findWhereAll($where, $value): false|array
+    {
+        return $this->getRows("SELECT * FROM {$this->tableName} WHERE {$where} = ?", [$value]);
     }
 
     public function insert(Array $data): false|string

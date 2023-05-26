@@ -5,8 +5,7 @@ namespace Core\Config\QueryBuilderTraits;
 
 trait WhereTrait
 {
-
-    public function where($where = null, $value = null): static
+    public function where($where = null, $value = null): self
     {
         if (stristr($where, " ")) {
             $this->where[] = "AND {$where} '{$value}'";
@@ -19,7 +18,7 @@ trait WhereTrait
         return $this;
     }
 
-    public function orWhere($where, $value): static
+    public function orWhere($where, $value): self
     {
         if (stristr($where, " ")) {
             $this->where[] = "OR {$where} '{$value}'";
@@ -29,7 +28,7 @@ trait WhereTrait
         return $this;
     }
 
-    public function orWhereIn(string $where, array $value): static
+    public function orWhereIn(string $where, array $value): self
     {
         $value = array_map(function ($value){
             return "'$value'";
@@ -39,7 +38,7 @@ trait WhereTrait
         return $this;
     }
 
-    public function orWhereNotIn(string $where, array $value): static
+    public function orWhereNotIn(string $where, array $value): self
     {
         $value = array_map(function ($value){
             return "'$value'";
@@ -49,7 +48,7 @@ trait WhereTrait
         return $this;
     }
 
-    public function whereNotIn(string $where, array $value): static
+    public function whereNotIn(string $where, array $value): self
     {
         $value = array_map(function ($value){
             return "'$value'";
@@ -59,7 +58,7 @@ trait WhereTrait
         return $this;
     }
 
-    public function whereIn(string $where, array $value): static
+    public function whereIn(string $where, array $value): self
     {
         $value = array_map(function ($value){
             return "'$value'";

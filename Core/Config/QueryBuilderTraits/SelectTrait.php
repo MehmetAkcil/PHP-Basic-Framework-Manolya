@@ -5,41 +5,41 @@ namespace Core\Config\QueryBuilderTraits;
 trait SelectTrait
 {
 
-    public function select($select): static
+    public function select($select): self
     {
         $this->select[] = implode(', ', (array)$select);
         return $this;
     }
 
-    public function selectCount($select, $as = null): static
+    public function selectCount($select, $as = null): self
     {
         $as = $as ?: $select;
         $this->select[] = "COUNT({$select}) as {$as}";
         return $this;
     }
 
-    public function selectSum($select, $as = null): static
+    public function selectSum($select, $as = null): self
     {
         $as = $as ?: $select;
         $this->select[] = "SUM({$select}) as {$as}";
         return $this;
     }
 
-    public function selectAvg($select, $as = null): static
+    public function selectAvg($select, $as = null): self
     {
         $as = $as ?: $select;
         $this->select[] = "AVG({$select}) as {$as}";
         return $this;
     }
 
-    public function selectMin($select, $as = null): static
+    public function selectMin($select, $as = null): self
     {
         $as = $as ?: $select;
         $this->select[] = "MIN({$select}) as {$as}";
         return $this;
     }
 
-    public function selectMax($select, $as = null): static
+    public function selectMax($select, $as = null): self
     {
         $as = $as ?: $select;
         $this->select[] = "MAX({$select}) as {$as}";

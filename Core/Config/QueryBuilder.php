@@ -12,7 +12,7 @@ class QueryBuilder extends Database
 
     use WhereTrait, SelectTrait, LikeTrait, OtherQueryTrait;
 
-    private string $sql = '';
+    private string $sql = "";
 
     private string $table;
     private array $select = [];
@@ -76,6 +76,7 @@ class QueryBuilder extends Database
     public function get(): false|array //verileri getir
     {
         $sql = $this->builder();
+
         return count($this->getRows($sql)) <= 0 ? false : $this->getRows($sql);
     }
 
