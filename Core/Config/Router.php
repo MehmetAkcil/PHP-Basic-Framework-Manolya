@@ -44,6 +44,7 @@ class Router
     public static function group($url, $callback) {
         self::$routerUrl = $url;
         call_user_func($callback);
+        self::$routerUrl = "";
     }
 
     public static function handle()
