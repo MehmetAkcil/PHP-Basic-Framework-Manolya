@@ -54,13 +54,16 @@ class Router
 
         $url = self::urlParser($url);
 
-        foreach (self::$routes[$method] as $route => $handler) {
-            $routeRegex = self::generateRouteRegex($route);
-            if (preg_match($routeRegex, $url, $matches)) {
-                array_shift($matches);
-                return self::callHandler($handler, $matches);
+        if(isset(self::$routes[$method])){
+            foreach (self::$routes[$method] as $route => $handler) {
+                $routeRegex = self::generateRouteRegex($route);
+                if (preg_match($routeRegex, $url, $matches)) {
+                    array_shift($matches);
+                    return self::callHandler($handler, $matches);
+                }
             }
         }
+
 
         return '404 Not Found';
     }
