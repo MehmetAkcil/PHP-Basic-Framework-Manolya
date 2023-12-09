@@ -64,8 +64,9 @@ class Router
             }
         }
 
-
-        return '404 Not Found';
+        return Respond::responseNotFound([
+            "message" => '404 Not Found'
+        ]);
     }
 
     private static function urlParser($url)
