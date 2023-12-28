@@ -25,11 +25,11 @@ class Request
 
     public static function request($name = false)
     {
-        parse_str(file_get_contents('php://input'), $_REQ);
+        $jsonData = json_decode(file_get_contents("php://input"), true);
         if($name){
-            return $_REQ[$name] ?? false;
+            return $jsonData[$name] ?? false;
         }else{
-            return $_REQ;
+            return $jsonData;
         }
 
     }
