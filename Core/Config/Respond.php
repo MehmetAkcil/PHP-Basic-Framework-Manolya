@@ -10,7 +10,7 @@ class Respond{
         return json_encode($data);
     }
 
-    public static function respond($data): false|string
+    public static function responseSuccess($data): bool|string
     {
         header('Content-Type: application/json');
         http_response_code(200);
